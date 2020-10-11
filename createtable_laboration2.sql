@@ -1,0 +1,25 @@
+-- SQLite
+CREATE TABLE users (
+id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE,
+firstname VARCHAR(32),
+lastname VARCHAR(32),
+email VARCHAR(50) UNIQUE,
+password VARCHAR(255))
+
+CREATE TABLE products (
+    pname VARCHAR(100),
+    description VARCHAR(255),
+    price REAL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE
+    
+)
+
+CREATE TABLE products_dm (
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE,
+    pname VARCHAR(100),
+    description VARCHAR(255),
+    price REAL,
+    img VARCHAR(100),
+    category VARCHAR(100)
+    
+)
